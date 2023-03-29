@@ -2,7 +2,7 @@
 This is a Java program which builds a simplified HTML validator.
 
 If this is the input:
-
+```
 <!DOCTYPE html public "-//W3C//DTD HTML 4.01 Transitional//EN">
 </!doctype> 
 <!-- This is a comment --> 
@@ -19,9 +19,9 @@ If this is the input:
     <p>Here is a picture of my cat:
     <img src="images/kitteh.jpg" width="100" height="100"> </p>
 </html>
-
+```
 Then the output will be:
-
+```
 <!DOCTYPE> 
 ERROR unexpected tag: </!doctype> 
 <!-- -->
@@ -45,3 +45,4 @@ ERROR unclosed tag: <body>
 ERROR unclosed tag: <title> 
 ERROR unclosed tag: <head> 
 ERROR unclosed tag: <html> 
+```
